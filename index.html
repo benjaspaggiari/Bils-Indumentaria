@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,75 +15,86 @@
 
 
 <body>
-<div class="container">
+<div class="container-fluid">
+<div class="row">
 
 
-<header>
-    <img src="./archivos/logos/logo.png" alt="Bils" class="header-logo">
-
-    <ul class="header-nav">
-        <a href="./index.html"><li>INICIO</li></a>
-        <a href="./assets/header/hombres.html"><li>HOMBRES</li></a>
-        <a href="/assets/header/mujeres.html"><li>MUJERES</li></a>
-        <a href="/assets/header/sale.html"><li>SALE</li></a>
-    </ul>
-
-
-    <div class="header-iconos">
-        <a href="./assets/header/perfil.html"><img src="./archivos/logos/perfil.png" alt=""></a>
-        <a href="./assets/header/carrito.html"><img src="./archivos/logos/carrito.png" alt=""></a>
-    </div>
+<header class="p-0">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img src="./archivos/logos/logo.png" alt="Bils Indumentaria" class="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">INICIO</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  CATEGORIAS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item fw-bold" href="./assets/header/hombres.html">HOMBRES</a></li>
+                  <li><a class="dropdown-item fw-bold" href="./assets/header/mujeres.html">MUJERES</a></li>
+                  <li><a class="dropdown-item fw-bold" href="./assets/header/sale.html">SALE</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 </header>
 
 
 
 <main>
-    <div class="main-categorias">
-        <section class="main-seccion animate__animated animate__bounceInLeft">
-            <a href="./assets/main/remeras.html"><img src="./archivos/productos/remeras.JPG" alt=""></a>
-            <h3>REMERAS</h3>
-        </section>
-        <section class="main-seccion animate__animated animate__bounceInRight">
-            <a href="./assets/main/pantalones.html"><img src="./archivos/productos/pantalones.JPG" alt=""></a>
-            <h3>PANTALONES</h3>
-        </section>
-        <section class="main-seccion animate__animated animate__bounceInLeft">
-            <a href="./assets/main/buzos.html"><img src="./archivos/productos/buzos.JPG" alt=""></a>
-            <h3>BUZOS</h3>
-        </section>
-        <section class="main-seccion animate__animated animate__bounceInRight">
-            <a href="./assets/main/accesorios.html"><img src="./archivos/productos/accesorios.JPG" alt=""></a>
-            <h3>ACCESORIOS</h3>
-        </section>
-    </div>
- 
-    <div class="main-video">
-        <iframe src="https://www.youtube.com/embed/A8CDVkV5pso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-    </div>
+    <section class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-12 col-lg-6 categoria">
+                <a href="./assets/main/remeras.html"><img src="./archivos/productos/remeras.JPG" class="img-fluid imagen" alt=""></a>
+                <h3 class="titulo-categoria">REMERAS</h3>
+            </div>
+            <div class="col-md-12 col-lg-6 categoria">
+                <a href="./assets/main/pantalones.html"><img src="./archivos/productos/pantalones.JPG" class="img-fluid imagen" alt=""></a>
+                <h3 class="titulo-categoria">PANTALONES</h3>
+            </div>
+            <div class="col-md-12 col-lg-6 categoria">
+                <a href="./assets/main/accesorios.html"><img src="./archivos/productos/accesorios.JPG" class="img-fluid imagen" alt=""></a>
+                <h3 class="titulo-categoria">ACCESORIOS</h3>
+            </div>
+            <div class="col-md-12 col-lg-6 categoria">
+                <a href="./assets/main/buzos.html"><img src="./archivos/productos/buzos.JPG" class="img-fluid imagen" alt=""></a>
+                <h3 class="titulo-categoria">BUZOS</h3>
+            </div>
+        </div>
+    </section>
 </main>
 
 
 
 <footer>
-    <div class="derechos">
-        <a href="./assets/footer/configuracion.html">CONFIGURACION DE COOKIES</a> 
-
-        <a href="./assets/footer/politicas.html">POLITICAS Y PRIVACIDAD</a> 
-
-        <a href="./assets/footer/ayuda.html">AYUDA</a> 
-
-        <a href="./assets/footer/contacto.html">CONTACTO</a> 
-    </div>
-
-    <div class="redes">
-        <a href="https://www.instagram.com/" target="_blank"><img src="./archivos/logos/instagram.png" alt=""></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="./archivos/logos/facebook.png" alt=""></a>
-        <a href="https://www.tiktok.com/es/" target="_blank"><img src="./archivos/logos/tiktok.png" alt=""></a>
-        <a href="https://twitter.com/home" target="_blank"><img src="./archivos/logos/twitter.png" alt=""></a>
+    <div class="container-fluid">
+        <div class="row footer">
+        <div class="col-md-8 col-sm-12 p-0 derechos">
+            <a href="./assets/footer/configuracion.html">CONFIGURACION DE COOKIES</a>
+            <a href="./assets/footer/ayuda.html">AYUDA</a>
+            <a href="./assets/footer/contacto.html">CONTACTO</a>
+        </div>
+        <div class="redes col-md-4 col-sm-12 p-0">
+            <a href="https://www.instagram.com/"><img src="./archivos/logos/instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/"><img src="./archivos/logos/facebook.png" alt=""></a>
+            <a href="https://www.tiktok.com/es/"><img src="./archivos/logos/tiktok.png" alt=""></a>
+            <a href="https://twitter.com/home"><img src="./archivos/logos/twitter.png" alt=""></a>
+        </div>
+        </div>
     </div>
 </footer>
 
-
 </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
