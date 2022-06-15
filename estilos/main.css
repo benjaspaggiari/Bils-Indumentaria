@@ -1,3 +1,4 @@
+/* ESTILOS GENERALES */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,8 @@ body {
 /* HEADER */
 header {
   background-color: #963312;
+  -webkit-box-shadow: 1px 1px 15px black;
+          box-shadow: 1px 1px 15px black;
 }
 
 header .logo {
@@ -21,24 +24,50 @@ header .logo {
 }
 
 header .nav-link {
-  color: white;
+  color: gainsboro;
   font-weight: bolder;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 header .nav-link:hover {
-  color: white;
   text-shadow: 5px 5px 10px black;
   -webkit-transform: translateX(-2px);
           transform: translateX(-2px);
+  color: gainsboro;
 }
 
 /* MAIN */
+.main-imagen {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6))), url("../archivos/logos/hero.webp");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6)), url("../archivos/logos/hero.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+  margin: 20px 0px;
+}
+
+.main-imagen h1 {
+  color: gainsboro;
+  font-weight: bolder;
+  margin: 0px auto;
+  font-size: 50px;
+  text-align: center;
+}
+
 .imagen {
   width: 100%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .imagen:hover {
@@ -47,7 +76,7 @@ header .nav-link:hover {
 }
 
 .titulo-categoria {
-  color: white;
+  color: gainsboro;
   background-color: #963312;
   text-align: center;
   font-weight: bolder;
@@ -96,7 +125,7 @@ h4 {
   border-radius: 5px;
   opacity: 0%;
   font-weight: bolder;
-  color: white;
+  color: gainsboro;
   margin-top: 5px;
   position: absolute;
   top: 80%;
@@ -110,7 +139,7 @@ h4 {
   border-radius: 5px;
   opacity: 0%;
   position: absolute;
-  color: white;
+  color: gainsboro;
   font-weight: bolder;
   text-align: center;
   bottom: 80%;
@@ -121,7 +150,7 @@ h4 {
 
 .titulo {
   font-weight: bolder;
-  color: white;
+  color: gainsboro;
   margin: 20px 0px 50px 10px;
 }
 
@@ -133,13 +162,29 @@ h4 {
   margin: 50px 5%;
   width: 90%;
   text-align: center;
-  color: white;
+  color: gainsboro;
   font-size: 25px;
+}
+
+.carrusel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* FOOTER */
 footer {
-  background-color: #963312;
+  background-color: #682009;
 }
 
 footer .redes {
@@ -167,7 +212,7 @@ footer .derechos {
 
 footer .derechos a {
   padding: 10px 5px;
-  color: white;
+  color: gainsboro;
   text-decoration: none;
   font-weight: bolder;
   margin-right: 5px;
@@ -179,8 +224,34 @@ footer .derechos a:hover {
   text-shadow: 5px 5px 10px black;
   -webkit-transform: translateX(-2px);
           transform: translateX(-2px);
+  color: gainsboro;
 }
 
+/* PAGINAS DEL FOOTER */
+.main-secundarias h3 {
+  color: gainsboro;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.main-secundarias p {
+  color: gainsboro;
+  margin-left: 30px;
+}
+
+.main-secundarias section {
+  margin-bottom: 80px;
+}
+
+.main-secundarias .buscador {
+  margin: 30px 0px 0px 30px;
+}
+
+.main-secundarias:img {
+  width: 25px;
+}
+
+/* MEIDA QUERYS */
 @media screen and (max-width: 450px) {
   .derechos a {
     font-size: 12px;
@@ -195,6 +266,15 @@ footer .derechos a:hover {
   .descripcion {
     font-size: 20px;
     margin: 0px 5% 30px 5%;
+  }
+  .carrusel .col-10 {
+    display: none;
+  }
+  .main-imagen {
+    height: 300px;
+  }
+  .main-imagen h1 {
+    font-size: 30px;
   }
 }
 
