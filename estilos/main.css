@@ -184,7 +184,7 @@ h4 {
 
 /* FOOTER */
 footer {
-  background-color: #682009;
+  background-color: #963312;
 }
 
 footer .redes {
@@ -232,6 +232,7 @@ footer .derechos a:hover {
   color: gainsboro;
   font-weight: bolder;
   font-size: 25px;
+  margin-bottom: 30px;
 }
 
 .main-secundarias p {
@@ -240,15 +241,19 @@ footer .derechos a:hover {
 }
 
 .main-secundarias section {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .main-secundarias .buscador {
-  margin: 30px 0px 0px 30px;
+  margin: 0px 0px 0px 30px;
 }
 
-.main-secundarias:img {
+.main-secundarias img {
   width: 25px;
+}
+
+.instagram {
+  margin-bottom: 269px;
 }
 
 /* MEIDA QUERYS */
