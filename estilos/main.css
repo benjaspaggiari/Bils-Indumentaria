@@ -1,7 +1,7 @@
 /* ESTILOS GENERALES */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -38,9 +38,12 @@ header .nav-link:hover {
   background-attachment: fixed;
   background-position: center;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 500px;
   margin: 20px 0px;
+  border-radius: 10px;
 }
 .main-imagen h1 {
   color: rgb(220, 220, 220);
@@ -48,6 +51,7 @@ header .nav-link:hover {
   margin: 0px auto;
   font-size: 50px;
   text-align: center;
+  text-shadow: 5px 5px 3px black;
 }
 
 .imagen {
@@ -69,56 +73,6 @@ header .nav-link:hover {
   margin: 0px 0px 50px 0px;
 }
 
-.productos {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-.productos:hover img {
-  opacity: 0.17;
-}
-.productos:hover h4 {
-  opacity: 100%;
-}
-.productos:hover p {
-  opacity: 100%;
-}
-.productos img {
-  opacity: 100;
-  width: 100%;
-  border-radius: 5px;
-  transition: all 0.5s ease-in-out;
-}
-
-h4 {
-  background-color: black;
-  padding: 3px;
-  border-radius: 5px;
-  opacity: 0%;
-  font-weight: bolder;
-  color: rgb(220, 220, 220);
-  margin-top: 5px;
-  position: absolute;
-  top: 80%;
-  transition: all 0.5s ease-in-out;
-}
-
-.productos p {
-  background-color: black;
-  padding: 3px;
-  border-radius: 5px;
-  opacity: 0%;
-  position: absolute;
-  color: rgb(220, 220, 220);
-  font-weight: bolder;
-  text-align: center;
-  bottom: 80%;
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
-}
-
 .titulo {
   font-weight: bolder;
   color: rgb(220, 220, 220);
@@ -138,6 +92,7 @@ h4 {
 }
 
 .carrusel {
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -174,9 +129,34 @@ footer .derechos a:hover {
   color: rgb(220, 220, 220);
 }
 
-/* PAGINAS DEL FOOTER */
+/* PAGINAS SECUNDARIAS */
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.productos img {
+  width: 100%;
+  border-radius: 5px;
+}
+.productos h4 {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  background-color: rgb(150, 51, 18);
+  padding: 3px;
+  border-radius: 5px;
+}
+.productos p {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
 .main-secundarias h3 {
-  color: rgb(220, 220, 220);
+  color: rgb(36, 36, 36);
   font-weight: bolder;
   font-size: 25px;
   margin-bottom: 30px;
