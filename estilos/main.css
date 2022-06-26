@@ -13,11 +13,16 @@ body {
 /* HEADER */
 header {
   background-color: rgb(150, 51, 18);
-  box-shadow: 1px 1px 15px black;
+  box-shadow: 5px 0px 15px black;
 }
 header .logo {
   height: 50px;
   margin-right: 20px;
+  transition: 0.5s all ease-in-out;
+}
+header .logo:hover {
+  transform: rotate(360deg);
+  height: 60px;
 }
 header .nav-link {
   color: rgb(220, 220, 220);

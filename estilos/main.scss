@@ -32,11 +32,17 @@ body {
 
 header {
     background-color: map-get($colores, secundario);
-    box-shadow: 1px 1px 15px black;
+    box-shadow: 5px 0px 15px black;
     
     .logo {
         height: 50px;
-        margin-right: 20px;}
+        margin-right: 20px;
+        transition: 0.5s all ease-in-out;
+    
+        &:hover {
+            transform: rotate(360deg);
+            height: 60px;
+        }}
     
     .nav-link {
         color: map-get($colores, letras);
