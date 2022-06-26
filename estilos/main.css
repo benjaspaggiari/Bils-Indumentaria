@@ -110,6 +110,10 @@ footer .redes {
 footer .redes img {
   width: 30px;
   margin: 5px;
+  transition: all 0.3s ease-in-out;
+}
+footer .redes img:hover {
+  filter: invert(100%) sepia(3%) saturate(2%) hue-rotate(275deg) brightness(104%) contrast(100%);
 }
 footer .derechos {
   display: flex;
@@ -193,10 +197,7 @@ footer .derechos a:hover {
   font-weight: bolder;
 }
 .comprar button:hover {
-  height: 33px;
-  padding: 0px 7px;
-  background-color: rgb(143, 143, 143);
-  color: white;
+  background-color: rgb(159, 156, 156);
 }
 
 /* MEIDA QUERYS */
